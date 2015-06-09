@@ -1,0 +1,24 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "London",
+      "count": 2
+    },
+    {
+      "id": 2,
+      "name": "San Francisco",
+      "count": 12
+    },
+    {
+      "id": 3,
+      "name": "Berlin",
+      "count": 22
+    },
+    {
+      "id": 4,
+      "name": "Tokio",
+      "count": 23
+    }
+  ]
+}

@@ -1,16 +1,25 @@
-<!-- index.html -->
 <html>
 	<head>
 		<title>Angular 2 Quickstart</title>
 		<script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
-		<script src="https://jspm.io/system@0.16.js"></script>
-		<script src="https://code.angularjs.org/2.0.0-alpha.23/angular2.dev.js"></script>
+		<script src="node_modules/systemjs/dist/system.js"></script>
+		<script src="https://code.angularjs.org/2.0.0-alpha.26/angular2.dev.js"></script>
+		<script src="node_modules/rx/dist/rx.all.js"></script>
+		<script src="node_modules/whatwg-fetch/fetch.js"></script>
 	</head>
 	<body>
 		<!-- The app component created in app.ts -->
 		<my-app></my-app>
 	</body>
 	<script>
+		System.config({
+		   map: {
+		    'rx': 'node_modules/rx/dist/rx',
+			'rx.all': 'node_modules/rx/dist/rx.all',
+			'fetch' :'node_modules/whatwg-fetch/fetch'
+		  }
+		});
 		System.import('app');
 	</script>
+
 </html>
